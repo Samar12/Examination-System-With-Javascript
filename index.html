@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="container1">
+
+        <div class="register">
+
+            <h3 class="header">Register Now</h3>
+
+
+            <form id="reg-form">
+
+                <div class="form-info">
+                    <input class="input " type="text" id="name" spellcheck="false" placeholder="  Your Name ...." />
+                    <span class="valid" id="valid1">Invalid (5 or more and not contains numbers)</span>
+                </div>
+
+                <div class="form-info">
+                    <input class="input " type="text" id="email" spellcheck="false" placeholder="  Your Email ...." />
+                    <span class="valid" id="valid2">Write email in a right form... </span>
+                </div>
+
+                <div class="form-info">
+                    <input class="input" type="password" id="password" placeholder="  Password ...." />
+                    <span class="valid" id="valid3">Invalid (8 or more)</span>
+                </div>
+
+                <div class="form-info">
+                    <input class="input" type="password" id="confirm-password" placeholder="  Confirm Password ...." />
+                    <span class="valid" id="valid4">Invalid (typical to password)</span>
+                </div>
+
+                <div class="form-info form-info-radio">
+                    Male <input class="input-info" id="male" type="radio" name="gender" value="male" checked>
+                    Female <input class="input-info" id="female" type="radio" name="gender" value="female">
+                </div>
+
+                <div class="form-info-button ">
+                    <input type="button" value="Submit" id="register" class="button" />
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <div class="container2">
+        <h4 id="question-header">Questions</h4>
+        <div id="question-container">
+            <div id="page-info">
+
+                <div class="question">
+                    <div>
+                        <h1><span id="question-number">Q1 </span> </h1>
+                        <span id="question-body"></span>
+                    </div>
+                    <div class="q">
+                        <input class="question-check" id="radio1" type="radio" name="answer" value="">
+                        <span class="question-answer" id="question-answer1"></span>
+                    </div>
+                    <div class="q">
+                        <input class="question-check" id="radio2" type="radio" name="answer" value="">
+                        <span class="question-answer" id="question-answer2"></span>
+                    </div>
+                    <div class="q">
+                        <input class="question-check" id="radio3" type="radio" name="answer" value="">
+                        <span class="question-answer" id="question-answer3"></span>
+                    </div>
+                    <div class="q">
+                        <input class="question-check" id="radio4" type="radio" name="answer" value="">
+                        <span class="question-answer" id="question-answer4"></span>
+                    </div>
+
+                </div>
+
+                <div class="question-buttons">
+                    <input type="button" value="Next" id="next" style="font-weight: bold" />
+                    <input type="button" value="Skip" id="skip" />
+                </div>
+
+
+            </div>
+        </div>
+        <div class="skiped-container">
+            <h5>Skiped</h5>
+        </div>
+
+    </div>
+
+    <div class="container3">
+        <div class="con3">
+            <h2 id="finalMessage"></h2>
+            <p id="Myscore"></p>
+            <img src="icon1.png" id="icon1">
+            <img src="icon2.png" id="icon2">
+        </div>
+    </div>
+
+
+    <script src="Js.js"></script>
+</body>
+
+</html>
